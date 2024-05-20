@@ -19,6 +19,7 @@ import java.io.IOException;
 @SpringBootApplication
 @Controller
 @RequestMapping("/")
+@CrossOrigin(origins = "*")
 public class CmOcrApplication {
 
 	public static void main(String[] args) {
