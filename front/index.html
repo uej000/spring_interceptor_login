@@ -1,0 +1,33 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<%@ page import="com.cmsoft.cm_ocr.CmOcrApplication" %> -->
+
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>image_ocr</title>
+    
+    <link rel="stylesheet" href="src\css\style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class = "title_tag">
+        <h1>IMAGE OCR</h1>
+        <p class="P_tag" data-id="4">
+        Extract text from your documents with ease.
+        </p>
+    </div>
+    <div class="content">
+        <label id = label_btn for="imageFile">Upload Image</label>
+        <input type="file" id="imageFile" name="imageFile" onchange="previewImage()" multiple>
+        <div id="imagePreview"></div> <!-- 이미지 미리보기를 표시할 영역 -->
+        <div class="result">OCR Result</div>
+        <hr style="border: 1px">
+        <div id="resultOCR"></div>
+    </div>
+</div>
+<script src="src\js\script.js"></script>
+</body>
+</html>
